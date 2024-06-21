@@ -6,34 +6,45 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header {
-    background-color: #333;
+    background-color: #8f8e77;
     color: #fff;
     padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 {
-    margin: 0;
-    text-align: center;
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 200px; /* Adjust the height as needed */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    text-align: center;
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1rem;
+    margin: 0 2rem;
 }
 
 nav ul li a {
-    color: #fff;
+    size: 500px;
+    color: #ffffff;
     text-decoration: none;
 }
 
