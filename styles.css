@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #ccc39b;
+    background-color: #333;
     color: #fff;
     padding: 1rem 0;
     display: flex;
@@ -29,8 +29,12 @@ header .logo {
 }
 
 header .logo img {
-    height: 160px; /* Set height to 100% of the nav bar */
-   
+    height: 170px; /* Set height to 100% of the nav bar */
+  
+}
+
+nav {
+    position: relative;
 }
 
 nav ul {
@@ -47,20 +51,20 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: 20px;
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     padding: 0.5rem 0;
     position: relative;
+    display: block;
 }
 
 nav ul li a::after {
     content: '';
     display: block;
-    width: 0px;
+    width: 0;
     height: 2px;
-    background: #ffffff;
-    transition: width 0.5s;
+    background: #ff6600;
+    transition: width 0.3s;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -68,15 +72,29 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
     width: 100%;
-    height: 3px;
 }
 
 nav ul li .donate-button {
-    background-color: #c54444;
+    background-color: #ff6600;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     text-decoration: none;
+    display: inline-block;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
 }
 
 main {
@@ -102,9 +120,31 @@ footer p {
     margin: 0;
 }
 
+/* Donation Button Styles */
+.form-group {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.form-group a button {
+    background-color: #ff6600;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.form-group a button:hover {
+    background-color: #e65c00;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .container {
+        width: 90%; /* Adjust container width for smaller screens */
         flex-direction: column;
         text-align: center;
     }
@@ -112,11 +152,16 @@ footer p {
     header {
         flex-direction: column;
         height: auto; /* Allow height to adjust for smaller screens */
+        padding: 0.5rem 0;
     }
 
     nav ul {
         flex-direction: column;
-        margin-top: 1rem;
+        display: none; /* Hide nav links initially */
+    }
+
+    nav ul.show {
+        display: flex; /* Show nav links when toggled */
     }
 
     nav ul li {
@@ -130,16 +175,24 @@ footer p {
     main {
         padding: 1rem;
     }
+
+    .hamburger {
+        display: flex; /* Display hamburger menu on smaller screens */
+    }
 }
 
 @media (max-width: 480px) {
-    header {
-        padding: 0.5rem 0;
-        height: auto; /* Allow height to adjust for smaller screens */
+    .container {
+        width: 95%; /* Further adjust container width for very small screens */
     }
 
     header .logo img {
         transform: scale(1); /* Adjust the scale for smaller screens */
+    }
+
+    nav ul {
+        padding: 0; /* Remove padding for smaller screens */
+        margin: 0.5rem 0; /* Add margin for spacing */
     }
 
     nav ul li {
