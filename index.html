@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
@@ -15,9 +15,16 @@
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="about.html" class="dropdown-toggle">About</a>
+                        <ul class="dropdown-content">
+                            <li><a href="history.html">Vision</a></li>
+                            <li><a href="team.html">Belief</a></li>
+                            <li><a href="mission.html">Our Pastor</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">Get Invloved</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="donate.html" class="donate-button">Give</a></li>
                 </ul>
@@ -33,8 +40,15 @@
     <main>
         <div class="container">
             <section id="home">
-                <h2>Welcome to My Website</h2>
-                <p>This is the home page of my awesome website.</p>
+                <div class="home-content">
+                    <div class="message">
+                        <h1>Welcome </h1>
+                        <p>We are dedicated to making a positive impact in our community. Join us in our mission to create a better world for everyone.</p>
+                    </div>
+                    <div class="image">
+                        <img src="hero-image.jpg" alt="Hero Image">
+                    </div>
+                </div>
             </section>
         </div>
     </main>
