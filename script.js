@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('show');
+        hamburger.classList.toggle('active');
     });
 
     dropdownToggle.addEventListener('click', (event) => {
