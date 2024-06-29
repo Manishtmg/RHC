@@ -29,8 +29,8 @@ header .logo {
 }
 
 header .logo img {
-    height: 170px; /* Set height to 100% of the nav bar */
-  
+    height: 155px; /* Set height to 100% of the nav bar */
+    
 }
 
 nav {
@@ -97,6 +97,40 @@ nav ul li .donate-button {
     transition: 0.4s;
 }
 
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 0.5rem;
+    padding: 0;
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown-content a {
+    padding: 0.75rem 1rem;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
 main {
     padding: 2rem 0;
 }
@@ -120,25 +154,39 @@ footer p {
     margin: 0;
 }
 
-/* Donation Button Styles */
-.form-group {
-    text-align: center;
-    margin-top: 2rem;
+/* Home Page Styles */
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.form-group a button {
-    background-color: #ff6600;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.home-content .message {
+    flex: 1;
+    padding: 1rem;
+}
+
+.home-content .message h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.home-content .message p {
     font-size: 1.2rem;
-    transition: background-color 0.3s;
+    line-height: 1.5;
 }
 
-.form-group a button:hover {
-    background-color: #e65c00;
+.home-content .image {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+}
+
+.home-content .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Media Queries for Responsiveness */
@@ -179,6 +227,15 @@ footer p {
     .hamburger {
         display: flex; /* Display hamburger menu on smaller screens */
     }
+
+    .home-content {
+        flex-direction: column;
+    }
+
+    .home-content .message,
+    .home-content .image {
+        padding: 0.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -202,4 +259,31 @@ footer p {
     main {
         padding: 0.5rem;
     }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 0.75rem;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e65c00;
 }
