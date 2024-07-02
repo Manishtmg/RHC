@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST['phone'];
 
     // Email settings
-    $to = "your-email@example.com"; // Replace with your email address
+    $to = "manishtamang0842@gmail.com"; // Replace with your email address
     $subject = "New Service Sign-Up";
     $headers = "From: " . $email . "\r\n" .
                "Reply-To: " . $email . "\r\n" .
