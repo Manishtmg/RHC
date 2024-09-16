@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background:radial-gradient(rgb(163, 188, 199), rgb(99, 117, 158));
 }
 
 .container {
@@ -14,7 +15,7 @@ body {
 }
 
 header {
-    background: radial-gradient(rgb(163, 188, 199),rgb(99, 117, 158));
+    background: radial-gradient(rgb(128, 128, 128),rgb(77, 73, 73));
     color: #fff;
     padding: 1rem 0;
     display: flex;
