@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background:radial-gradient(rgb(163, 188, 199), rgb(99, 117, 158));
+    background:radial-gradient(rgb(255, 255, 255), rgb(198, 202, 211));
 }
 
 .container {
@@ -21,6 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 19px 50px rgba(0, 0, 0, 0.2);
     height: 80px; /* Fixed height for the nav bar */
 }
 
@@ -295,6 +296,17 @@ form button {
 
 form button:hover {
     background-color: #073057;
+}
+
+a button{
+    box-sizing: 60px;
+    padding: 0.75rem;
+    background: radial-gradient(green,rgb(2, 151, 9));
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
 }
 
 
