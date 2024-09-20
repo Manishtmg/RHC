@@ -28,12 +28,16 @@ header {
 header .logo {
     display: flex;
     align-items: center;
+   
+    
 }
 
 header .logo img {
     height: 155px; /* Set height to 100% of the nav bar */
+   
     
 }
+
 
 nav {
     position: relative;
@@ -53,10 +57,11 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     padding: 0.5rem 0;
     position: relative;
+    text-shadow: 0 8px 16px rgb(8, 20, 27);
     display: block;
 }
 
@@ -66,6 +71,7 @@ nav ul li a::after {
     width: 0;
     height: 2px;
     background: #ffffff;
+    box-shadow: 0 8px 16px rgb(0, 0, 0);
     transition: width 0.3s;
     position: absolute;
     left: 0;
@@ -77,10 +83,11 @@ nav ul li a:hover::after {
 }
 
 nav ul li .donate-button {
-    background-color: #0a4f8f;
+    background:radial-gradient(#185a97, rgb(47, 47, 112));
     color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+    padding: 0.7rem 2rem;
+    border-radius: 7px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-decoration: none;
     display: inline-block;
 }
@@ -299,9 +306,22 @@ form button:hover {
 }
 
 a button{
+    align-items: center;
     box-sizing: 60px;
-    padding: 0.75rem;
-    background: radial-gradient(green,rgb(2, 151, 9));
+    padding: 1rem 2rem;
+    background: radial-gradient(rgb(0, 162, 255),rgb(76, 101, 184));
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+a button:hover{
+ 
+    align-items: center;
+    box-sizing: 60px;
+    padding: 2rem 4rem;
+    background: radial-gradient(rgb(3, 40, 95),rgb(6, 88, 136));
     color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border: none;
