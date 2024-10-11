@@ -170,11 +170,12 @@ footer p {
 
 /* Home Page Styles */
 .home-content {
-    display: flex;
+    display: flexbox;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 .home-content .message {
     flex: 1;
@@ -182,6 +183,8 @@ footer p {
 }
 
 .home-content .message h1 {
+   
+    text-align: center;
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
