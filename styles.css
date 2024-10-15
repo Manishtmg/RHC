@@ -14,6 +14,8 @@ body {
     align-items: center;
 }
 
+
+
 header {
     background: radial-gradient(rgb(128, 128, 128),rgb(77, 73, 73));
     color: #fff;
@@ -29,7 +31,6 @@ header .logo {
     display: flex;
     align-items: center;
    
-    
 }
 
 header .logo img {
@@ -278,6 +279,68 @@ footer p {
     }
 }
 
+
+
+/* Home Page Styles */
+.home-content {
+    display: flexbox;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.home-content .message {
+    flex: 1;
+    padding: 1rem;
+}
+
+.home-content .message h1 {
+   
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.home-content .message p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.home-content .image {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+}
+
+.home-content .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container-get{
+    display: flexbox;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.container-get .message-content h1{
+    text-align: center;
+}
+.container-get .message-content h1{
+    display: flexbox;
+    text-align: center;
+}
+.container-get .message-content p{
+    display: flexbox;
+    text-align: center;
+}
+.container-get .content h2{
+    display: flexbox;
+    text-align: center;
+}
 form {
     display: flex;
     flex-direction: column;
