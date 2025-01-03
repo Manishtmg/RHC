@@ -401,3 +401,54 @@ a button:hover{
 
 
 
+/*Pastor
+
+/* Styling for the team section */
+#team .content {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#team h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Pastor profile section */
+.pastor-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+  
+    margin-top: 20px;
+}
+
+/* Pastor image styles */
+.pastor-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 4px solid #6c63ff;
+}
+
+/* Pastor info styles */
+.pastor-info {
+    text-align: left;
+}
+
+.pastor-info h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pastor-info p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
