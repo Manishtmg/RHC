@@ -328,6 +328,36 @@ footer p {
     border-radius: 10px;
 }
 
+
+
+/* Flexbox layout for the pastor content */
+.Pastor-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Adds space between the paragraph and image */
+}
+
+/* Styling for the message section */
+.message {
+    flex: 2;
+    text-align: left;
+}
+
+/* Styling for the image section */
+.image {
+    flex: 1;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+
+
+
+
 .container-get{
     display: flexbox;
     align-items: center;
@@ -410,54 +440,3 @@ a button:hover{
 
 
 
-/*Pastor
-
-/* Styling for the team section */
-#team .content {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-#team h1 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/* Pastor profile section */
-.pastor-profile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-  
-    margin-top: 20px;
-}
-
-/* Pastor image styles */
-.pastor-image {
-    width: 450px;
-    height: 400px;
-    border-radius: 5%;
-    margin-right: 20px;
-    border: 1px solid #000000;
-}
-
-/* Pastor info styles */
-.pastor-info {
-    text-align: left;
-}
-
-.pastor-info h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.pastor-info p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-}
